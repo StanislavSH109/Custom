@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, intitial-scale=1">
+        <title>MODULE_16</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css"/>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript">
+        </script>
+        <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css"/>
+        <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
+        <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
+    </head>
+    <body>
+        <main>
+            <section>
+                <div class="container">
+                    <div class="description-maps">
+                        <p class="description-maps-text">В качестве адреса для маркера используйте: Франция, Иль-де-Франс, Париж, X округ Парижа, улица дю Фобур Сен Дени  54
+                        </p>
+                    </div> 
+                    <ul class="list-elements">
+                        <!--##################################### ЧЕКБОКСЫ ############################### -->
+                        <li class="list-item">
+                            <div class="container-checkbox">
+                                <h3 class="title-checkbox">Категории:</h3>
+                                <div class="blockbox">
+                                    <label class="labelcheck">
+                                        <input type="checkbox" class="label_checkbox">
+                                        <span class="labelcheck_custom"></span>
+                                        <span class="labelcheck_span">Динозавры</span>
+                                    </label>
+                                </div>
+                                <div class="blockbox">
+                                    <label class="labelcheck">
+                                        <input type="checkbox" class="label_checkbox">
+                                        <span class="labelcheck_custom"></span>
+                                        <span class="labelcheck_span">Медведи</span>
+                                    </label>
+                                </div>
+                                <div class="blockbox">
+                                    <label class="labelcheck" tabindex="0">
+                                        <input type="checkbox" class="label_checkbox">
+                                        <span class="labelcheck_custom"></span>
+                                        <span class="labelcheck_span">Косули</span>
+                                    </label>
+                                </div>
+                                <div class="blockbox">
+                                    <label class="labelcheck">
+                                        <input type="checkbox" class="label_checkbox">
+                                        <span class="labelcheck_custom"></span>
+                                        <span class="labelcheck_span">Лисы</span>
+                                    </label>
+                                </div>
+                                <div class="blockbox">
+                                    <label class="labelcheck">
+                                        <input type="checkbox" class="label_checkbox">
+                                        <span class="labelcheck_custom"></span>
+                                        <span class="labelcheck_span">Волки</span>
+                                    </label>
+                                </div>
+                                <div class="blockbox">
+                                    <label class="labelcheck">
+                                        <input type="checkbox" class="label_checkbox">
+                                        <span class="labelcheck_custom"></span>
+                                        <span class="labelcheck_span">Олени и лоси</span>
+                                    </label>   
+                                </div>
+                            </div>
+                        </li>
+                        <!-- ###################################### МАТЕРИАЛ ############################-->
+                        <li class="list-item">
+                            <div class="container-material">
+                               <select name="select-first" id="" class="choices">
+                                <option value="">Материал</option>
+                                </select>
+                            </div>
+                        </li>
+                      <!--############################## МАТЕРИАЛ - SELECT ###############################  -->
+                        <li class="list-item">
+                            <div class="container-material-select">
+                                <select name="select-second" id="" class="choices-second">
+                                    <option value="">Материал</option>
+                                    <option>Древесина</option>
+                                    <option>Металл</option>
+                                    <option>Камень</option>
+                                    <option>Пластик</option>
+                                    <option>Композитный</option>
+                                    <option>Гипс</option>
+                                </select>
+                            </div> 
+                        </li>
+                        <!-- ##################################### КАРТА ################################## -->
+                        <li class="list-item">
+                            <div class="container-maps">
+                                <div class="map" id="map"></div>    
+                            
+                            </div>
+                        </li>
+                        <!-- ##################################### СКРОЛЛБАР ############################### -->
+                        <li class="list-item">
+                            <div class="custom-scroll" data-simplebar>
+                                <p>
+                                Сложно сказать, почему многие известные личности представлены в исключительно положительном свете. Лишь активно развивающиеся страны третьего мира будут объективно рассмотрены соответствующими инстанциями. Мы вынуждены отталкиваться от того, что высокотехнологичная концепция общественного уклада представляет собой интересный эксперимент проверки глубокомысленных рассуждений. Имеется спорная точка зрения, гласящая примерно следующее: непосредственные участники технического прогресса освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, обнародованы. Значимость этих проблем настолько очевидна, что социально-экономическое развитие, а также свежий взгляд на привычные вещи - безусловно открывает новые горизонты для первоочередных требований.
+                                Сложно сказать, почему многие известные личности представлены в исключительно положительном свете. Лишь активно развивающиеся страны третьего мира будут объективно рассмотрены соответствующими инстанциями. Мы вынуждены отталкиваться от того, что высокотехнологичная концепция общественного уклада представляет собой интересный эксперимент проверки глубокомысленных рассуждений. Имеется спорная точка зрения, гласящая примерно следующее: непосредственные участники технического прогресса освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, обнародованы. Значимость этих проблем настолько очевидна, что социально-экономическое развитие, а также свежий взгляд на привычные вещи - безусловно открывает новые горизонты для первоочередных требований.
+                                Имеется спорная точка зрения, гласящая примерно следующее: непосредственные участники технического прогресса освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, обнародованы. Значимость этих проблем настолько очевидна, что социально-экономическое развитие, а также свежий взгляд на привычные вещи - безусловно открывает новые горизонты для первоочередных требований.
+                                </p>            
+                            </div>
+                        </li>
+                        <!-- ############## ФОРМА ############# -->
+                        <li class="list-item">
+                            <div class="container-form">
+                                
+                                    <form action="" class="form" id="form">
+                                        <input type="text" placeholder="Имя*" name="Имя" data-validate-field="name">
+                                        <input type="tel" placeholder="Телефон*" name="tel" data-validate-field="phone" data-validate-rules="phone">
+                                        <input type="text" placeholder="E-mail*" name="email" data-validate-field="email">
+                                        <button class="button">Заказать</button>
+                                    </form>
+                                
+                            </div>
+                        </li>
+                        <!-- ################### TУЛТИП  ##################### -->
+                        <li class="list-item">
+                            <div class="container-tooltip">
+                                <div class="first">
+                                    <p>  
+                                    Следует отметить, что социально-экономическое развитие способствует повышению качества переосмысления внешнеэкономических политик. 
+                                    <span class="tooltip-container tooltip-1">
+                                    <span class="tooltip">i</span>
+                                    </span>
+                                    </p>
+                                </div>
+                                <div class="second">
+                                    <p>      
+                                    Следует отметить, что социально-экономическое развитие способствует повышению качества переосмысления внешнеэкономических политик. 
+                                    <span class="tooltip-container tooltip-2">
+                                    <span class="tooltip tooltip-second">i</span>
+                                    </span>
+                                    </p>
+                                </div>
+                                
+                            </div>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </section>
+        </main>
+        <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+        <script src="choices.js"></script>
+        <script type="text/javascript" src="map.js"></script>
+        <script src="https://rawcdn.githack.com/horprogs/Just-validate/7661936417e8aaad0e059291890c68a6bf473f6b/dist/js/just-validate.min.js"></script>
+        <script src="inputmask.js"></script>
+        <script src="custom.js"></script>
+    </body>
+</html>
